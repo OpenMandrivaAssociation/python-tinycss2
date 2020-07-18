@@ -1,9 +1,10 @@
+%global debug_package %{nil}
 %define partnme tinycss2 
 
 Name:           python-tinycss2
 Summary:        CSS parser for Python
 Version:        1.0.2
-Release:        2
+Release:        3
 Group:          System/Libraries
 License:        BSD
 URL:            http://pythonhosted.org/tinycss2/
