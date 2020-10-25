@@ -4,7 +4,7 @@
 Name:           python-tinycss2
 Summary:        CSS parser for Python
 Version:        1.0.2
-Release:        4
+Release:        5
 Group:          System/Libraries
 License:        BSD
 URL:            http://pythonhosted.org/tinycss2/
@@ -32,4 +32,5 @@ dos2unix LICENSE
 
 %files
 %doc LICENSE README.rst
-%{python3_sitelib}/*/*
+%{python3_sitelib}/tinycss2
+%{python3_sitelib}/*.egg-info
