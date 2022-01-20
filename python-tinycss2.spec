@@ -3,14 +3,18 @@
 
 Name:           python-tinycss2
 Summary:        CSS parser for Python
-Version:        1.0.2
+Version:        1.1.1
 Release:        5
 Group:          System/Libraries
 License:        BSD
 URL:            http://pythonhosted.org/tinycss2/
 Source0:        https://github.com/Kozea/tinycss2/archive/%{partnme}-%{version}.tar.gz
 BuildRequires:  dos2unix
-BuildRequires:  pkgconfig(python) python-setuptools python-cython
+BuildRequires:  pkgconfig(python) 
+BuildRequires:	python-setuptools 
+BuildRequires:	python-cython
+BuildRequires:	python-wheel
+BuildRequires:	python-pip
 
 # Do not check .so files in the python_sitelib directory
 # or any files in the application's directory for provides
