@@ -16,6 +16,7 @@ BuildRequires:	python-cython
 BuildRequires:	python-wheel
 BuildRequires:	python-pip
 BuildRequires:	python-webencodings
+BuildRequires:	python-flit
 
 # Do not check .so files in the python_sitelib directory
 # or any files in the application's directory for provides
