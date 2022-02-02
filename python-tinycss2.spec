@@ -15,6 +15,7 @@ BuildRequires:	python-setuptools
 BuildRequires:	python-cython
 BuildRequires:	python-wheel
 BuildRequires:	python-pip
+BuildRequires:	python-webencodings
 
 # Do not check .so files in the python_sitelib directory
 # or any files in the application's directory for provides
@@ -29,10 +30,13 @@ It has a simpler API and is based on the more recent CSS Syntax Level 3 specific
 dos2unix LICENSE
 
 %build
-%{__python} setup.py build
+#python -m pip wheel --wheel-dir=./ .
+%{__python} -m pip wheel --no-build-isolation --wheel-dir=./ .
+#pip wheel --no-cache-dir  .
 
 %install
-%{__python} setup.py install --skip-build --prefix=%{_prefix} --root %{buildroot}
+%{__python} pip install  --prefix=%{_prefix} --root=%{buildroot}
+#%%{__python} setup.py install --skip-build --prefix=%{_prefix} --root %{buildroot}
 
 %files
 %doc LICENSE README.rst
