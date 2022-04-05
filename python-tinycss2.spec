@@ -15,7 +15,7 @@ BuildRequires:	python-setuptools
 BuildRequires:	python-cython
 BuildRequires:	python-wheel
 BuildRequires:	python-pip
-BuildRequires:	python-webencodings
+BuildRequires:	python3dist(webencodings)
 BuildRequires:	python-flit
 BuildRequires:  python-flit-core
 
