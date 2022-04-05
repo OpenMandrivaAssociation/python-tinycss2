@@ -33,14 +33,14 @@ dos2unix LICENSE
 
 %build
 #python -m pip wheel --wheel-dir=./ .
-%{__python} -m pip wheel --no-build-isolation --wheel-dir=./ .
+%{__python} -m pip wheel --no-build-isolation --no-deps --wheel-dir=./ .
 #pip wheel --no-cache-dir  .
 
 %install
-%{__python} pip install  --prefix=%{_prefix} --root=%{buildroot}
+%{__python} -m pip install  --prefix=%{_prefix} --root=%{buildroot} *.whl
 #%%{__python} setup.py install --skip-build --prefix=%{_prefix} --root %{buildroot}
 
 %files
 %doc LICENSE README.rst
 %{python3_sitelib}/tinycss2
-%{python3_sitelib}/*.egg-info
+%{python3_sitelib}/*.dist-info
