@@ -7,7 +7,7 @@ Version:        1.1.1
 Release:        7
 Group:          System/Libraries
 License:        BSD
-URL:            http://pythonhosted.org/tinycss2/
+URL:            https://pythonhosted.org/tinycss2/
 Source0:        https://github.com/Kozea/tinycss2/archive/%{partnme}-%{version}.tar.gz
 BuildRequires:  dos2unix
 BuildRequires:  pkgconfig(python) 
